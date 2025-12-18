@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения, Мама! ❤️</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Marck+Script&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Конверт -->
+        <div class="envelope" id="envelope">
+            <div class="flap"></div>
+            <div class="body">
+                <div class="message" id="clickMessage">
+                    <i class="fas fa-hand-point-up"></i>
+                    <p>Нажми на конверт!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Поздравительная открытка -->
+        <div class="card hidden" id="card">
+            <div class="card-content">
+                <h1><i class="fas fa-birthday-cake"></i> С ДНЕМ РОЖДЕНИЯ! <i class="fas fa-birthday-cake"></i></h1>
+
+                <div class="message-box">
+                    <p class="greeting">Дорогая мама!</p>
+                    <p>В этот прекрасный день хочу пожелать тебе здоровья, счастья, улыбок и радости!</p>
+                    <p>Ты — самый дорогой человек в моей жизни, и я бесконечно благодарен за всё, что ты для меня делаешь.</p>
+                    <p>Пусть каждый твой день будет наполнен любовью, теплом и прекрасными моментами!</p>
+                    <p class="signature">С любовью, твой сын ❤️</p>
+                </div>
+
+                <div class="controls">
+                    <button id="heartsBtn" class="btn">
+                        <i class="fas fa-heart"></i> Запустить сердечки
+                    </button>
+                    <button id="moreHeartsBtn" class="btn">
+                        <i class="fas fa-heartbeat"></i> Ещё больше сердечек!
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Область для сердечек -->
+        <div id="heartsContainer"></div>
+
+        <!-- Дополнительное поздравление -->
+        <div class="additional-message hidden" id="additionalMessage">
+            <h2><i class="fas fa-star"></i> Самой лучшей маме на свете! <i class="fas fa-star"></i></h2>
+            <p>Спасибо за твою бесконечную заботу, поддержку и любовь!</p>
+            <div class="hearts-row">
+                <span class="heart-emoji">❤️</span>
+                <span class="heart-emoji">💖</span>
+                <span class="heart-emoji">💕</span>
+                <span class="heart-emoji">💗</span>
+                <span class="heart-emoji">💓</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Фоновые украшения -->
+    <div class="decoration decoration1">🎉</div>
+    <div class="decoration decoration2">🎂</div>
+    <div class="decoration decoration3">🎁</div>
+    <div class="decoration decoration4">✨</div>
+    <div class="decoration decoration5">🌸</div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
